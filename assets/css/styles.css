@@ -86,7 +86,7 @@ header ul li:hover {
 }
 
 #welcome span {
-  color: rgb(212, 95, 37);
+  color: #f05757;
 }
 
 #role {
@@ -101,7 +101,6 @@ header ul li:hover {
   width: 100%;
   justify-content: flex-end;
   font-size: 22px;
-
 }
 
 #location svg {
@@ -109,11 +108,28 @@ header ul li:hover {
 }
 
 #city {
-    color: rgb(171, 171, 171);
-
+  color: rgb(171, 171, 171);
 }
 
 #celesteImg {
   max-height: 600px;
 }
 
+#about {
+  background-color: #2689cd;
+  padding: 100px;
+  color: white;
+}
+
+#aboutTitle {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #f05757;
+  margin-bottom: 40px;
+}
+
+#aboutBody {
+    line-height: 25px;
+}
