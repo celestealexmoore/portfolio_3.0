@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   font-family: sans-serif;
   z-index: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -57,6 +58,7 @@ header ul li:hover {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
+  height: fit-content;
 }
 
 .btn:hover {
