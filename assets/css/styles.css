@@ -90,6 +90,7 @@ header ul li:hover {
 }
 
 #role {
+  color: rgb(91, 91, 91);
   font-size: 24px;
 }
 
@@ -99,14 +100,20 @@ header ul li:hover {
   gap: 5px;
   width: 100%;
   justify-content: flex-end;
+  font-size: 22px;
+
 }
 
 #location svg {
+  color: rgb(171, 171, 171);
 }
 
 #city {
+    color: rgb(171, 171, 171);
+
 }
 
 #celesteImg {
   max-height: 600px;
 }
+
