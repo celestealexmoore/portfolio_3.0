@@ -3,6 +3,7 @@ body {
     url("../images/backgroundImg.png");
   background-repeat: no-repeat;
   font-family: sans-serif;
+  z-index: 0;
 }
 
 header {
@@ -47,52 +48,65 @@ header ul li:hover {
   cursor: pointer;
 }
 
-/* CSS */
-.button-51 {
-  background-color: transparent;
-  border: 1px solid #266db6;
-  box-sizing: border-box;
-  color: #00132c;
-  font-family: "Avenir Next LT W01 Bold", sans-serif;
+/* button start*/
+.btn {
+  background-color: #2689cd;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
   font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
-  position: relative;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  border: none;
 }
 
-.button-51:hover,
-.button-51:active {
-  outline: 0;
-}
-
-.button-51:hover {
-  background-color: transparent;
+.btn:hover {
+  background-color: rgb(73, 73, 73);
   cursor: pointer;
 }
+/* button stop */
 
-.button-51:before {
-  background-color: #bcd9e4;
-  content: "";
-  height: calc(100% + 3px);
-  position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
+#welcomeDiv {
+  display: flex;
+  flex-flow: row wrap;
+  height: fit-content;
   width: 100%;
-  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  text-align: end;
+  padding: 20px;
 }
 
-.button-51:hover:before {
-  background-color: rgb(38, 137, 205);
+#welcomeInfoDiv * {
+  margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-  .button-51 {
-    padding: 16px 32px;
-  }
+#welcome {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+}
+
+#welcome span {
+  color: rgb(212, 95, 37);
+}
+
+#role {
+  font-size: 24px;
+}
+
+#location {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#location svg {
+}
+
+#city {
+}
+
+#celesteImg {
+  max-height: 600px;
 }
