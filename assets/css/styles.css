@@ -1,0 +1,98 @@
+body {
+  background-image: linear-gradient(to left, white, white),
+    url("../images/backgroundImg.png");
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: white;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  position: sticky;
+  padding: 15px;
+}
+
+#homeLogo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#logoImg {
+  max-width: 45px;
+}
+
+#homeLogo h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  align-items: center;
+  letter-spacing: 1.5px;
+  color: rgb(73, 73, 73);
+}
+
+header ul li:hover {
+  color: rgb(117, 117, 117);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* CSS */
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266db6;
+  box-sizing: border-box;
+  color: #00132c;
+  font-family: "Avenir Next LT W01 Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #bcd9e4;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: rgb(38, 137, 205);
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
