@@ -165,7 +165,9 @@ header ul li:hover {
   width: 175px;
 } */
 
-#skillsTitle {
+#skillsTitle,
+#projectsTitle,
+.projectTitle {
   font-size: 35px;
   font-weight: 600;
   color: black;
@@ -182,4 +184,54 @@ header ul li:hover {
   text-decoration-color: #f05757;
   text-decoration-thickness: 3px;
   margin-bottom: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+}
+
+.projectDetails {
+  max-width: 50%;
+}
+
+#projectsTitle {
+  align-self: flex-start;
+}
+
+.indProject {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+  text-align: right;
+  gap: 20px;
+}
+
+.projectTitle {
+  text-decoration: none;
+  color: rgb(47, 44, 44);
+  margin-bottom: 10px;
+}
+
+.projectTech {
+  font-size: 20px;
+  color: rgb(103, 102, 102);
+}
+
+.projectDescription {
+  font-size: 18px;
+  color: rgb(171, 171, 171);
+  max-width: 450px;
+  margin: 0 15px 0 30px;
+}
+
+#mooreBooksImg {
+  min-width: 280px;
+  max-width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
