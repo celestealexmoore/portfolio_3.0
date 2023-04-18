@@ -242,10 +242,10 @@
       <div id="twoMooreBooks" class="indProject odd">
         <div class="projectDetails">
           <h1 class="projectTitle">Chat Widget</h1>
-          <h1 class="projectTech">React Component | CSS </h1>
+          <h1 class="projectTech">React Component | CSS</h1>
           <h1 class="projectDescription">
-            A React Component. I created this Animated, Interactive Chat Widget with CSS
-            animations.
+            A React Component. I created this Animated, Interactive Chat Widget
+            with CSS animations.
           </h1>
           <a
             href="https://celestealexmoore.github.io/chatWidget/"
@@ -255,10 +255,7 @@
             >Demo</a
           >
         </div>
-        <img
-          id="chatWidgetImg"
-          src="./assets/images/projects/chatWidget.png"
-        />
+        <img id="chatWidgetImg" src="./assets/images/projects/chatWidget.png" />
       </div>
     </section>
 
@@ -292,7 +289,10 @@
       <p>© Celeste Moore <sup>2023</sup></p>
 
       <div id="footerSVG">
-        <a href="https://www.linkedin.com/in/celeste-moore-22a036204/">
+        <a
+          href="https://www.linkedin.com/in/celeste-moore-22a036204/"
+          target="_blank"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -306,7 +306,7 @@
             /></svg
         ></a>
 
-        <a href="https://github.com/celestealexmoore">
+        <a href="https://github.com/celestealexmoore" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -324,5 +324,14 @@
     </footer>
 
     <script src="./assets/js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YOUR_PUBLIC_KEY");
+      })();
+    </script>
   </body>
 </html>
