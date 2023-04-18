@@ -16,7 +16,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   </head>
   <body>
-    <header>
+    <header id="desktopNav">
       <div id="homeLogo">
         <img id="logoImg" src="./assets/images/logoImg.png" />
         <h1>celesteMoore</h1>
@@ -37,6 +37,43 @@
       >
         Download My Resume</a
       >
+    </header>
+
+    <header id="mobileNav">
+      <div id="homeLogo">
+        <img id="logoImg" src="./assets/images/logoImg.png" />
+        <h1>celesteMoore</h1>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+        />
+      </svg>
+
+      <div id="dropdown">
+        <a href="#aboutDiv">About</a>
+        <a href="#skillsDiv">Skills</a>
+        <a href="#projectsDiv">Projects</a>
+
+        <a
+          id="downloadBtn"
+          class="btn"
+          target="_blank"
+          href="./assets/images/resume.pdf"
+          download
+        >
+          Download My Resume</a
+        >
+      </div>
     </header>
 
     <div id="background"></div>
@@ -78,7 +115,7 @@
     <section id="aboutDiv">
       <h1 id="aboutTitle" class="title">About</h1>
       <p id="aboutBody">
-        I am a Full Stack React Developer with an artistic eye and knack for
+        I am a Full-Stack Developer with an artistic eye and knack for
         aesthetics. My interests include Googling emerging technologies, sifting
         through color schemes and typography best suited for the software I’m
         designing, and sharing Tech Tea with friends. I am heavy on the “I may

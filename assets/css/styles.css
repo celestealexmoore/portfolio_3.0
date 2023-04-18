@@ -3,7 +3,6 @@
 }
 
 body {
-  /* overflow-x: hidden; */
   font-family: sans-serif;
   box-sizing: border-box;
   width: 100%;
@@ -21,19 +20,6 @@ body {
   height: 100vh;
   background-color: transparent;
   opacity: 0.5;
-}
-
-header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  background-color: white;
-  color: black;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  position: sticky;
-  top: 0;
-  padding: 15px;
 }
 
 #homeLogo {
@@ -66,6 +52,22 @@ header ul li:hover {
   cursor: pointer;
 }
 
+#dropdown {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#dropdown a {
+  /* border: 1ps solid rgb(117, 117, 117); */
+
+}
+
 /* button start*/
 .btn {
   background-color: #2689cd;
@@ -85,15 +87,15 @@ header ul li:hover {
 
 #welcomeDiv {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   height: fit-content;
   width: 100%;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  text-align: end;
-  padding: 20px;
-  /* display: none; */
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 30px;
 }
 
 #welcomeInfoDiv * {
@@ -102,7 +104,7 @@ header ul li:hover {
 
 #welcome {
   font-family: "Poppins", sans-serif;
-  font-size: 60px;
+  font-size: 45px;
 }
 
 #welcome span {
@@ -119,7 +121,7 @@ header ul li:hover {
   flex-flow: row nowrap;
   gap: 5px;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: center;
   font-size: 22px;
 }
 
@@ -143,7 +145,7 @@ header ul li:hover {
 #aboutDiv {
   background-color: #2689cd;
   width: 100%;
-  padding: 100px;
+  padding: 30px;
   color: white;
 }
 
@@ -158,6 +160,8 @@ header ul li:hover {
 
 #aboutBody {
   line-height: 25px;
+  font-size: 18px;
+  letter-spacing: 0.3px;
 }
 
 #skillsDiv {
@@ -168,7 +172,6 @@ header ul li:hover {
   background-color: transparent;
   text-align: center;
   width: 100%;
-  /* display: none; */
 }
 
 #skillsTitle {
@@ -186,10 +189,6 @@ header ul li:hover {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin: 5px;
 }
-
-/* #skills div img:hover {
-  width: 175px;
-} */
 
 .title,
 .projectTitle {
@@ -219,7 +218,6 @@ header ul li:hover {
   padding: 100px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* display: none; */
 }
 
 .projectDetails {
@@ -268,7 +266,7 @@ header ul li:hover {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  margin: 100px;
+  margin: 30px;
   max-width: 100%;
 }
 
@@ -279,6 +277,7 @@ header ul li:hover {
   background-color: transparent;
   padding: 20px;
   width: 100%;
+  margin-top: -40px;
 }
 
 input[type="text"],
@@ -310,7 +309,6 @@ input[type="submit"] {
   font-size: 16px;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-color: rgb(73, 73, 73);
 }
@@ -319,9 +317,10 @@ input[type="submit"]:hover {
 
 footer {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
   align-items: center;
+  gap: 15px;
   padding: 15px;
   color: rgb(103, 102, 102);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px 8px,
@@ -337,29 +336,99 @@ footer a:hover {
 }
 
 @media screen and (min-width: 320px) {
-  /* #skills {
+  #desktopNav {
+    display: none;
+  }
+
+  #mobileNav {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  } */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+  }
 
   #celesteImg {
     display: none;
   }
-}
 
-/* @media screen and (min-width: 480px) {
-  #celesteImg {
-    max-height: 300px;
-    background-color: transparent;
+  #frontEnd img,
+  #backEnd img,
+  #environment img,
+  #versionControl img {
+    width: 30%;
   }
 }
-*/
+
+@media screen and (min-width: 480px) {
+  /* #celesteImg {
+    max-height: 300px;
+    background-color: transparent;
+  } */
+
+  #welcome {
+    font-size: 50px;
+  }
+
+  #aboutBody {
+    font-size: 16px;
+  }
+}
 
 @media screen and (min-width: 719px) {
+  #mobileNav {
+    display: none;
+  }
+
+  #desktopNav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+  }
+
+  #welcomeDiv {
+    flex-flow: row wrap;
+    text-align: end;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  #welcome {
+    font-size: 60px;
+  }
+
+  #location {
+    justify-content: flex-end;
+  }
+
   #celesteImg {
     display: block;
+  }
+
+  #aboutDiv,
+  #contactDiv {
+    padding: 100px;
+  }
+
+  .contactForm {
+    margin-top: 0px;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 }
