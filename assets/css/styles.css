@@ -13,7 +13,6 @@ body {
   top: 0;
   background-image: linear-gradient(to left, white, transparent),
     url("../images/backgroundImg.png");
-  /* background-size: 100% 100vh; */
   background-repeat: no-repeat;
   z-index: -1;
   width: 100%;
@@ -105,7 +104,7 @@ header ul li:hover {
 
 #welcomeDiv {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   height: fit-content;
   width: 100%;
   justify-content: center;
@@ -156,7 +155,7 @@ header ul li:hover {
 }
 
 #celesteImg {
-  max-height: 600px;
+  /* height: 600px; */
   background-color: transparent;
 }
 
@@ -419,11 +418,6 @@ footer a:hover {
 }
 
 @media screen and (min-width: 480px) {
-  /* #celesteImg {
-    max-height: 300px;
-    background-color: transparent;
-  } */
-
   #welcome {
     font-size: 50px;
   }
@@ -467,7 +461,7 @@ footer a:hover {
   }
 
   #welcomeDiv {
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     text-align: end;
     padding: 20px;
     margin-bottom: 0;
@@ -483,6 +477,7 @@ footer a:hover {
 
   #celesteImg {
     display: block;
+    height: 400px;
   }
 
   #projectsDiv {
@@ -553,5 +548,15 @@ footer a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 967px) {
+
+  #background {
+    height: 1000px;
+  }
+  #celesteImg {
+    height: 600px;
   }
 }
