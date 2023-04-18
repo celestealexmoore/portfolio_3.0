@@ -53,19 +53,34 @@ header ul li:hover {
 }
 
 #dropdown {
+  position: absolute;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  background-color: white;
   gap: 3px;
   color: black;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 100%;
+  margin-top: 60px;
+  left: 0px;
 }
 
 #dropdown a {
-  /* border: 1ps solid rgb(117, 117, 117); */
-
+  border-bottom: 1px solid rgb(197, 197, 197);
+  width: 100%;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #f05757;
+  text-underline-offset: 8px;
+  text-align: center;
+  border-radius: 0;
+  background-color: white;
 }
 
 /* button start*/
@@ -343,7 +358,7 @@ footer a:hover {
   #mobileNav {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: white;
     color: black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
