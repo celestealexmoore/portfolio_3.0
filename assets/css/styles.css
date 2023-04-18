@@ -184,7 +184,8 @@ header ul li:hover {
   letter-spacing: 0.3px;
 }
 
-#skillsDiv {
+#skillsDiv,
+skillsDivMobile {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -377,11 +378,29 @@ footer a:hover {
     display: none;
   }
 
+  #skillsDiv {
+    display: none;
+  }
+
+  #skillsDivMobile {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+  }
+
   #frontEnd img,
   #backEnd img,
   #environment img,
   #versionControl img {
-    width: 30%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 70px;
   }
 }
 
@@ -397,6 +416,21 @@ footer a:hover {
 
   #aboutBody {
     font-size: 16px;
+  }
+
+  #skillsDivMobile {
+    display: none;
+  }
+
+  #skillsDiv {
+    display: flex;
+  }
+
+  #frontEnd img,
+  #backEnd img,
+  #environment img,
+  #versionControl img {
+    width: auto;
   }
 }
 
