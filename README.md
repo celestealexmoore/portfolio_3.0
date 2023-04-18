@@ -2,7 +2,7 @@
 
 # portfolio_3.0
 
-### _This is my Updated Portfolio. _
+### _This is my Updated Portfolio._
 
   </div>
   
