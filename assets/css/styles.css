@@ -87,7 +87,6 @@ header ul li:hover {
   background-color: white;
 }
 
-/* button start*/
 .btn {
   background-color: #2689cd;
   color: white;
@@ -96,13 +95,13 @@ header ul li:hover {
   font-size: 16px;
   border: none;
   height: fit-content;
+  width: fit-content;
 }
 
 .btn:hover {
   background-color: rgb(73, 73, 73);
   cursor: pointer;
 }
-/* button stop */
 
 #welcomeDiv {
   display: flex;
@@ -374,7 +373,7 @@ footer a:hover {
     text-align: center;
   }
 
-  .projectDetails *{
+  .projectDetails * {
     width: 100%;
     margin-bottom: 10px;
   }
@@ -395,9 +394,10 @@ footer a:hover {
     max-width: 450px;
   }
 
-  /* #projectDeployment {
-    margin: 20px !important;
-  } */
+  #projectDeployment {
+    display: inline-block; /* so that margin works with the a tag */
+    width: fit-content;
+  }
 
   #mooreBooksImg {
     min-width: 280px;
@@ -405,7 +405,7 @@ footer a:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
       rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
       rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-      margin: 20px;
+    margin: 20px;
   }
 }
 
