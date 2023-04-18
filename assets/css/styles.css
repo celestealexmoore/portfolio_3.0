@@ -357,7 +357,7 @@ footer a:hover {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 50px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -371,6 +371,7 @@ footer a:hover {
     flex-flow: column-reverse nowrap;
     align-self: center;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   .projectDetails * {
@@ -399,13 +400,21 @@ footer a:hover {
     width: fit-content;
   }
 
-  #mooreBooksImg {
-    min-width: 280px;
-    max-width: 400px;
+  #mooreBooksImg,
+  #chatWidgetImg {
+    align-self: center;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
       rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
       rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     margin: 20px;
+  }
+
+  #mooreBooksImg {
+    max-width: 280px;
+  }
+
+  #chatWidgetImg {
+    width: 200px;
   }
 }
 
@@ -476,6 +485,61 @@ footer a:hover {
     display: block;
   }
 
+  #projectsDiv {
+    padding: 100px;
+  }
+
+  .projectDetails {
+    max-width: 50%;
+    align-self: center;
+  }
+
+  #projectsTitle {
+    align-self: flex-start;
+  }
+
+  .indProject {
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    text-align: right;
+    gap: 10px;
+  }
+
+  .projectTitle {
+    text-decoration: none;
+    color: rgb(47, 44, 44);
+    margin-bottom: 10px;
+  }
+
+  .projectTech {
+    font-size: 20px;
+    color: rgb(103, 102, 102);
+  }
+
+  .projectDescription {
+    font-size: 18px;
+    color: rgb(171, 171, 171);
+    max-width: 450px;
+  }
+
+  #mooreBooksImg {
+    max-width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .odd {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  #chatWidgetImg {
+    height: 350px;
+    width: auto;
+  }
+
   #aboutDiv,
   #contactDiv {
     padding: 100px;
@@ -491,53 +555,3 @@ footer a:hover {
     justify-content: space-between;
   }
 }
-
-/* #projectsDiv {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.projectDetails {
-  max-width: 50%;
-}
-
-#projectsTitle {
-  align-self: flex-start;
-}
-
-.indProject {
-  display: flex;
-  flex-flow: row wrap;
-  align-self: center;
-  text-align: right;
-  gap: 20px;
-}
-
-.projectTitle {
-  text-decoration: none;
-  color: rgb(47, 44, 44);
-  margin-bottom: 10px;
-}
-
-.projectTech {
-  font-size: 20px;
-  color: rgb(103, 102, 102);
-}
-
-.projectDescription {
-  font-size: 18px;
-  color: rgb(171, 171, 171);
-  max-width: 450px;
-}
-
-#mooreBooksImg {
-  min-width: 280px;
-  max-width: 400px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-} */
